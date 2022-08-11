@@ -1,0 +1,11 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<hr>
+<h1>Projects</h1>
+<ul>
+    {% for project in projects %}
+        <li>Name: {{ project.title }}</li>
+    {% endfor %}
+</ul>
+{% endblock content %}
