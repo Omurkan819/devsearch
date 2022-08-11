@@ -5,7 +5,7 @@
 <h1>Projects</h1>
 <ul>
     {% for project in projects %}
-        <li>Name: {{ project.title }}</li>
+        <li>Title: <a href="{% url 'project' project.id %}">{{ project.title }}</a></li>
     {% endfor %}
 </ul>
 {% endblock content %}
